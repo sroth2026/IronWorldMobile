@@ -100,9 +100,12 @@ struct LogWorkoutLiftView: View {
 
                 TextField("Any notes...", text: $notes)
                     .textFieldStyle(.roundedBorder)
-
-                Button("Submit Workout") {
-                    saveWorkout()
+                HStack {
+                    Spacer()
+                    Button("Submit Workout") {
+                        saveWorkout()
+                    }
+                    Spacer()
                 }
                 .buttonStyle(.borderedProminent)
                 .padding(.top)
