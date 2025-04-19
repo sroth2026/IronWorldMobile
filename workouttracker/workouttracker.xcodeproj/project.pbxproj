@@ -11,6 +11,7 @@
 		8416E1F62DB2DD3000BB2DCA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8416E1F52DB2DD3000BB2DCA /* FirebaseAuth */; };
 		8416E1F82DB2DD3000BB2DCA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8416E1F72DB2DD3000BB2DCA /* FirebaseFirestore */; };
 		8416E1FA2DB2DD3000BB2DCA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8416E1F92DB2DD3000BB2DCA /* FirebaseStorage */; };
+		845D631A2DB3610700E138B7 /* hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D63192DB3610600E138B7 /* hello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		8416E1C52DB2DB0300BB2DCA /* workouttracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workouttracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8416E1D32DB2DB0500BB2DCA /* workouttrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workouttrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8416E1DD2DB2DB0500BB2DCA /* workouttrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workouttrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845D63192DB3610600E138B7 /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -86,6 +88,7 @@
 		8416E1BC2DB2DB0300BB2DCA = {
 			isa = PBXGroup;
 			children = (
+				845D63192DB3610600E138B7 /* hello.swift */,
 				8416E1C72DB2DB0300BB2DCA /* workouttracker */,
 				8416E1D62DB2DB0500BB2DCA /* workouttrackerTests */,
 				8416E1E02DB2DB0500BB2DCA /* workouttrackerUITests */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845D631A2DB3610700E138B7 /* hello.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

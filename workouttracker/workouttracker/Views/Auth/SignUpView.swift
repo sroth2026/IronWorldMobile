@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
+import FirebaseFirestore
 
 struct SignUpView: View {
     @Binding var showLogin: Bool
@@ -63,7 +64,26 @@ struct SignUpView: View {
                 error = err.localizedDescription
                 return
             }
-            userID = result?.user.uid ?? ""
+
+            guard let uid = result?.user.uid else {
+                error = "Failed to get user ID."
+                return
+            }
+            userID = uid
+
+            let db = Firestore.firestore()
+            db.collection("users").document(uid).setData([
+                "email": email,
+                "lifts": [:],
+                "swim": [:],
+                "bike": [:],
+                "run": [:]
+            ]) { err in
+                if let err = err {
+                    error = "Failed to initialize user data: \(err.localizedDescription)"
+                }
+            }
         }
     }
+
 }
